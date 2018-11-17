@@ -1,0 +1,308 @@
+body {
+  position: relative; 
+}
+  
+.container {
+  max-width: 1400px;
+}
+
+nav {
+  margin-top: 40px;
+}
+
+.icon {
+	width: 40px;
+	height: auto;
+	margin-right: 10px;
+}
+
+img {
+  width:80%;
+}
+
+h1 {
+  color: #d0ca9e;
+  font-weight: bold;
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+a {
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+}
+
+.content {
+  margin-top: 80px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.order{
+
+  display: inline-block;
+}
+a.order:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.row {
+  margin-top: 100px;
+}
+
+.order {
+  background-color: #2f2f2f;
+  color: #fff;
+  padding: 9px 20px;
+  margin-right:10px; 
+}
+
+.log{
+  background-color: #fff;
+  color: #000;
+  padding: 10px 14px;
+  border: 1px solid #000;
+}
+
+/*Menu*/
+
+.ad-menu li a {
+  line-height: 1;
+  display: inline-block;
+  text-decoration:none;
+  cursor: pointer;
+}
+
+.ad-menu li a:after {
+
+  display: block;
+  content: "";
+  margin-top: 15px;
+  height: 4px;
+  width: 0%;
+  background-color: #ee5575;
+  opacity: 0.6;
+  transition: width .5s ease-in-out;
+}
+	
+.ad-menu li a:hover:after,
+.ad-menu li a:focus:after {
+  width: 100%;
+}
+
+.ad-menu li a:hover {
+  color: #ee5575;
+}
+
+.ad-menu *:focus,.ad-menu *::before,.ad-menu *::after {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: content-box; 
+}
+
+.ad-menu li {
+  display: inline-block;
+  font-size: 1em;
+  margin-right: 20px;
+}
+
+.ad-menu li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.icon_lock {
+  width: 20px;
+  margin-left:0;
+  height: auto;
+}
+
+.buttons {
+  text-align: right;
+}
+
+@media screen and (max-width: 980px) {
+
+.ad-menu {
+  margin-top:30px;
+}
+
+.buttons {
+  text-align: left;
+}
+.content {
+  margin: 20px;
+}
+
+img {
+  width:60%;
+  margin-left: 80px;
+}
+	
+.ad-menu li {
+  width: 100%;
+}
+
+.ad-menu ul {
+  display: none;
+}
+
+.ad-menu nav::before {
+  content: '\2630';
+  font-size:28px;
+  color: #000;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: block;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+.ad-menu::after {
+  content: '';
+  font-size:28px;
+  color: #000;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: block;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+
+.ad-menu::after {
+  background-position: -24px -24px;
+  z-index: 1;
+}
+
+.ad-menu nav::before {
+  z-index: 2;
+}
+
+.ad-menu nav:focus::before {
+  z-index: 0;
+}
+
+.ad-menu nav:focus ul,
+.ad-menu ul:hover {
+  display: block;
+}
+
+.col-md-4 {
+  margin-top:0;
+}
+
+.ad-menu li a:after {
+ display: none;
+}
+
+  }
+
+
+@media screen and (max-width: 770px) {
+
+.order {
+  display: none;
+}
+
+a.log {
+  margin-top:10px;
+  margin-left: 20px;
+}
+
+.col-md-4 {
+  padding-left:0;
+  margin-top:40px;
+}
+
+.ad-menu nav::before,
+.ad-menu::after {
+  top: 110px;
+  right: 40px;
+}
+
+.container {
+width: 700px;
+padding-right: 0;
+margin: 0;
+}
+
+.row {
+margin-top: 20px;
+}
+
+#moon {
+  width: 60%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  width: 280px;
+}
+
+h2 {
+  font-size: 26px;
+  width: 200px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+p { 
+  font-size: 18px;
+  width: 400px;
+}
+
+.ad-menu li a:after {
+ display: none;
+}
+
+img {
+  margin-left: 0;
+  }
+}
+
+ 
+
+@media only screen and (max-width: 440px) {
+
+.container {
+  max-width: 400px;
+}
+
+.col-md-4 {
+  margin-top:20px;
+}
+
+#moon {
+  width: 100%;
+  text-align: center;
+  margin-left: 0;
+}
+
+.icon {
+  margin-left: 0;
+}
+
+.ad-menu nav::before, .ad-menu::after {
+    top: 90px;
+ }
+
+}
+
